@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cart = JSON.parse(savedCart);
     }
     // localStorage: конец загрузки
-    // новые изменения для изменений
+    // новые изменения для изменений 2
     // Настройка фильтра
     const filterSelect = document.getElementById('filter');
     if (filterSelect) {
