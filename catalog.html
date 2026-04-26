@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <div class="catalog-container">
+        <div class="products-section">
+            <h1>Catalog</h1>
+            
+            <div>
+                <label>Filter:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                    <option value="yellow">Kinda orange</option>
+                    <option value="cute">Cute</option>
+                </select>
+            </div>
+
+            <div class="products-list">
+                <div class="item product-card" data-category="used yellow" data-name="Half eaten chicken nugget" data-price="13">
+                    <img src="images/nug.jpg" alt="Chicken nugget" width="150">
+                    <br>
+                    <a class="o-link" href="items/el1.html">Half eaten chicken nugget</a>
+                    <p class="price">Price: 13 ₽</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <br>
+
+                <div class="item product-card" data-category="new yellow" data-name="Lada Granta wing (orange)" data-price="5382">
+                    <img src="images/gra.jpg" alt="Granta wing" width="150">
+                    <br>
+                    <a class="o-link" href="items/el2.html">Lada Granta wing (orange)</a>
+                    <p class="price">Price: 5382 ₽</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <br>
+
+                <div class="item product-card" data-category="used cute" data-name="Cute picture of Fedor" data-price="299">
+                    <img src="images/fro.jpg" alt="Elaijah Wood" width="150">
+                    <br>
+                    <a class="o-link" href="items/el3.html">Cute picture of Fedor</a>
+                    <p class="price">Price: 299 ₽</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <br>
+
+                <div class="item product-card" data-category="new cute" data-name="Pony jar (NOT USED!)" data-price="666">
+                    <img src="images/pon.jpg" alt="Rainbow Dash" width="150">
+                    <br>
+                    <a class="o-link" href="items/el4.html">Pony jar (NOT USED!)</a>
+                    <p class="price">Price: 666 ₽</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="cart-section">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems">
+                <li>Cart is empty</li>
+            </ul>
+            <div id="totalPrice">Total: 0 ₽</div>
+            <button id="clearCart">Clear Cart</button>
+            <button id="payButton">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <p>&copy;All You Need Shop. All rights are reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body {
+
+color: rgb(205, 221, 242);
+
+background: rgb(24, 19, 41);
+
+}
+
+ 
+
+h1 {
+
+text-align: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(202, 188, 211);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(102, 67, 122);
+    padding: 10px;
+}
+
+.i-header {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(146, 138, 185);
+    padding: 5px;
+}
+
+.f-desc {
+    color: rgb(231, 225, 232);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.s-desc {
+    color: rgb(223, 212, 227);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.specs-list {
+    list-style-image: url('images/geo.png');
+    color: rgb(205, 221, 242);
+}
+
+.pur-link{
+    color: rgb(202, 188, 211);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pur-link:hover {
+    background-color: rgb(102, 67, 122);
+    padding: 10px;
+}
+
+.o-link {
+    color: rgb(202, 188, 211);
+    font-size: 18px;
+}
+
+
+
+/* Стили для каталога с корзиной */
+.catalog-container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.products-section {
+    flex: 2;
+}
+
+.cart-section {
+    flex: 1;
+    background: rgb(35, 28, 56);
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.cart-section h2 {
+    margin-top: 0;
+    color: rgb(205, 221, 242);
+}
+
+#cartItems {
+    list-style: none;
+    padding: 0;
+}
+
+#cartItems li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(102, 67, 122);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#totalPrice {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: right;
+}
+
+.remove-from-cart {
+    background: rgb(123, 80, 80);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-from-cart:hover {
+    background: rgb(159, 69, 69);
+}
+
+#clearCart, #payButton {
+    background: rgb(102, 67, 122);
+    color: rgb(205, 221, 242);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#clearCart:hover, #payButton:hover {
+    background: rgb(130, 90, 150);
+}
+
+.add-to-cart {
+    background: rgb(84, 114, 94);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background: rgb(80, 140, 100);
+}
+
+.price {
+    color: rgb(220, 204, 178);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card {
+    border: 1px solid rgb(102, 67, 122);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: rgb(30, 24, 48);
+}
